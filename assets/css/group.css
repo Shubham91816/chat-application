@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    background-color: #ebf2fc;
+    background: linear-gradient(
+        rgba(246, 247, 249, 0.8),
+        rgba(246, 247, 249, 0.8)
+      ),
+      url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1564049481/bg-clouds.jpg)
+        no-repeat center center fixed;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  
+    /* background: linear-gradient( #ebf2fc, #ebf2fc) */
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 70%;
+    height: 850px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background-color: #fff;
+  }
+  
+  .logo-container {
+    flex: 1;
+    text-align: center;
+    height: 280px;
+  }
+  
+  .logo-container img {
+    max-width: 50%;
+    min-width: 300px;
+    height: auto;
+  }
+  
+  .form-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  #login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  #login-form label {
+    color: #1c3965;
+  }
+  label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: large;
+  }
+  .container-heading {
+    text-align: center;
+    color: #4416c1;
+  }
+  input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #808080;;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-container button {
+    width: 300px;
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4416c1;
+    border: none;
+    /* margin-bottom: 50px; */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .login-container {
+      width: 80%;
+      min-width: 350px;
+    }
+    .logo-container img {
+      width: 70%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .login-container {
+      width: 80%;
+    }
+    .logo-container img {
+      margin-top: 70px;
+    }
+  
+  }
+  
+  .form-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%; 
+      
+  }
+  
+  .password-container,
+  .username-container {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  
+  .btn-animate {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn-animate .btn {
+    width: 45%;
+    
+    background: #4416c1;
+    color: #fff;
+  }
+  .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+  }
+  
+  input:focus {
+      outline: none; 
+      border: none; 
+  }
+  /*grp add*/
+  .notifi-item {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 15px 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    /* justify-content: space-between; */
+  }
+  .notifi-item img {
+    /* display: block; */
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  .text{
+    color: #777;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline;
+  }
+  .add_people{
+    overflow-y: scroll;
+    height: 400px;
+    padding-right: 15px;
+  }
+  .checkbox{
+    margin-right: 25px;
+    display: flex;
+  }
